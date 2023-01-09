@@ -566,8 +566,8 @@ nav.bottom-nav{
 }
 
 .ripple:hover{
-  background-color: #eaeaea;
-  background-image: radial-gradient(circle,transparent 1%,#eaeaea 1%);
+  background-color: #e4e4e4;
+  background-image: radial-gradient(circle,transparent 1%,#e4e4e4 1%);
   background-position: center;
   outline: none;
   border-radius: 40px;
@@ -576,7 +576,7 @@ nav.bottom-nav{
 
 .ripple:active{
   transition: background 0s;
-  background-color: #989898;    
+  background-color: #949494;    
   background-size: 100%;
 }
 
