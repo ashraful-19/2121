@@ -16,6 +16,7 @@
 
   a, a:hover, a:active, a:link, a:visited {
     text-decoration: none !important;
+   
   }
 
 
@@ -485,8 +486,8 @@ div.accordion {
  transition: max-height 0.3s ease-in-out;
  background-color: #ededed;
  box-shadow: 5px 5px 13px #e2e2e2, -5px -5px 13px #f6f6f6!important;
-  display: flex;
-  flex-direction: column;
+ display: flex;
+flex-direction: column;
  
  
 
@@ -497,10 +498,10 @@ div.accordion {
     border-radius: 5px;
     width: 100%;
     padding: 7px 15px;
-width:85%;
-margin: 4px auto;
- font-size: 14px;
- color: #5b5b5b;
+    width:85%;
+    margin: 4px auto;
+    font-size: 14px;
+    color: #5b5b5b;
  
     
 }
@@ -530,10 +531,10 @@ nav.bottom-nav{
     flex-direction: row;
 
     justify-content: space-between;
-position: fixed;
-bottom: 0px;
-   background: rgb(238 238 238);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: fixed;
+    bottom: 0px;
+    background: rgb(238 238 238);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .nav-item{
@@ -541,8 +542,6 @@ bottom: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
- 
     padding: 14px 10px 8px 10px;
     width: 100%;
 
@@ -555,12 +554,31 @@ bottom: 0px;
 }
   
 .nav-item span{
-    font-size: 13px;
+    font-size: 12px;
   color: rgb(8, 8, 8);
 }
 
+/* ripple effect */
 
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
 
+.ripple:hover{
+  background-color: #eaeaea;
+  background-image: radial-gradient(circle,transparent 1%,#eaeaea 1%);
+  background-position: center;
+  outline: none;
+  border-radius: 40px;
+  background-size: 15000%;
+}
+
+.ripple:active{
+  transition: background 0s;
+  background-color: #989898;    
+  background-size: 100%;
+}
 
 
 
