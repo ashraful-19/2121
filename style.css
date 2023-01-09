@@ -7,15 +7,18 @@
   html,
   body {
     font-family: sans-serif;
-    background: #ededed!important;
+    background: #ededed;
     height: 100%;
     font-family: "SolaimanLipi", Arial, sans-serif; !important
   }
   
 
-  a,a:hover, a:active,a:link.a:visited {
-    text-decoration: none;
+  a, a:hover, a:active, a:link, a:visited {
+    text-decoration: none !important;
   }
+
+
+
   /* a{
       text-decoration: none !important;
       color: black !important;
@@ -33,27 +36,7 @@
   }
   
   
-  .slideimg {
-    height: 235px;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  
-  .mid {
-    height: auto;
-    width: 95%;
-    box-shadow: 5px 5px 13px #e4e4e4, -5px -5px 13px #f6f6f6;
-    margin: 99px auto 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  
-    margin-bottom: 33px;
-  }
-  
+
 
   
 
@@ -346,7 +329,27 @@
   }  */
    
 
+/* top AREA DESIGN CSS */
+.slideimg {
+  height: 235px;
+  width: 100%;
+  object-fit: cover;
+}
 
+
+.toparea {
+  height: auto;
+  width: 95%;
+  box-shadow: 5px 5px 13px #e4e4e4, -5px -5px 13px #f6f6f6;
+  margin: 99px auto 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 33px;
+}
 
 
 
