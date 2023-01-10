@@ -89,32 +89,6 @@
     padding: 0px;
   }
   
-  h6.mid-align {
-    text-align: center !important;
-    color: rgba(255, 255, 255, 0.772);
-    font-weight: 100;
-    font-size: 20px;
-  }
-  
-  
-  .day {
-    margin: 0 auto;
-  
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .grad {
-    padding: 5px 10px;
-    border-radius: 10px;
-    background: rgb(31, 32, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(31, 32, 36, 1) 0%,
-      rgba(32, 21, 38, 1) 60%
-    );
-  }
   
   
   
@@ -570,7 +544,7 @@ nav.bottom-nav{
   background-image: radial-gradient(circle,transparent 1%,#e4e4e4 1%);
   background-position: center;
   outline: none;
-  border-radius: 40px;
+  border-radius: 50px;
   background-size: 15000%;
 }
 
@@ -581,8 +555,75 @@ nav.bottom-nav{
 }
 
 
+/* DAY wise alignment */
+span.mid-align {
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.772);
+  font-weight: 100;
+  font-size: 17px;
+}
 
+
+.day_body {
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 7px;
+  background: rgb(31, 32, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 32, 36, 1) 0%,
+    rgba(32, 21, 38, 1) 60%
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------Lesson VIdeo CSS-------------------- */
   
+.lecture {
+  
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  font-size: 14px;
+  width: 100%;
+  border-bottom:1px solid rgb(210, 210, 210);
+  border-top: 1px solid rgb(210, 210, 210);
+  font-family: 'SolaimanLipi', Arial, sans-serif !important;
+ }
+ .lecture i{
+  font-size: 18px;;
+  margin-right: 10px;
+} 
+ 
+  
+ .menuicon {
+   padding: 4px 8px;
+   position: fixed;
+   bottom: 80px;
+   right: 20px;
+   font-size: 20px;
+   border-radius: 70%;
+   border: 2px solid black;
+ }
+ 
 
 
 
