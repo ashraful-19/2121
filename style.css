@@ -637,7 +637,7 @@ margin-right: 10px;
 } 
 
 
-.menuicon {
+#menuicon {
  padding: 4px 8px;
  position: fixed;
  bottom: 80px;
@@ -646,8 +646,59 @@ margin-right: 10px;
  border-radius: 70%;
   background:white;
  border: 2px solid black;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ background-color: rgb(255, 255, 255);
+}
+
+#menuicon:hover {
+color:#291666
+ }
+
+#floatingMenu{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: fixed;
+  bottom: 130px;
+  right: 20px;
+  
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  min-width: 250px;
+  background: white;
+  font-size: 13px;
+  display: none;
+}
+
+#floatingMenu ul>li i{
+  
+  padding: 11px;
 }
 
 
+#floatingMenu ul>li{
+  list-style: none;
+  border-radius: 4px;
+  max-width: 400px;
+  min-width: 250px;
+  transition: background 0.3s;
+  transition: color 0.3s;
+
+}
+#floatingMenu ul>li:hover{
+  background: #7134ff;
+  color: white;
+}
 
 
+#floatingMenu {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3 ease-in-out;
+}
+#floatingMenu.fade {
+  opacity:0;
+}
