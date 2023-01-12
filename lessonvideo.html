@@ -33,6 +33,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css"
     />
+
+	
   </head>
   <body>
 
@@ -147,7 +149,12 @@
 	</div>
 
 </section>
-    <div class="menuicon">
+<div id="floatingMenu">
+	<ul><li><i class="fa-regular fa-circle-play"></i>First Option jodi</li><li><i class="fa-regular fa-circle-play"></i>Second Option</li>
+	<li><i class="fa-regular fa-circle-play"></i>Third Option</li></ul>
+</div>
+
+    <div id="menuicon">
         <i class="fa-solid fa-bars"></i>
     </div>
 
@@ -181,5 +188,13 @@
     </nav>
 </section>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  $("#menuicon").click(function(){
+		$("#floatingMenu").fadeToggle(100);
+	  });
+	});</script>
   <script src="./script.js"></script>
+ 
 </html>
