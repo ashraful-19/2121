@@ -20,10 +20,14 @@ for (var i = 0; i < accordions.length; i++) {
 
 
 // simple text animation for homepage
-var string = "সপ্ন জয় তোমারই হবে, আজকে থেকে স্বপ্নের পথে নতুন যাত্রা মিশন আইএসএসবি এর সাথে।";
+var string = "SELECTOR OF THE LEADERS";
 var str = string.split("");
 var el = document.getElementById('str');
 (function animate() {
 str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
-var running = setTimeout(animate, 40);
+var running = setTimeout(animate, 200);
 })();
+
+
+// MenuIconbar floating nav
+

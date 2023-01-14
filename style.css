@@ -16,6 +16,7 @@ body {
 
 a, a:hover, a:active, a:link, a:visited {
   text-decoration: none !important;
+  color: black;
  
 }
 
@@ -135,11 +136,7 @@ background-color: rgb(255, 230, 161);
 
 /* iq landing page css */
 
-/* .icon-dp {
-  margin-top: 2px;
-  height: 40px;
-  width: auto;
-}
+/* 
 
 .icon-back {
   margin-top: 8px;
@@ -321,9 +318,25 @@ div.explasec div:nth-child(2) {
   position: fixed;
   top: 0px;
   width: 100%;
+  height: 60px;
   background-color: rgb(255, 255, 255);
   z-index: 34;
 }
+
+#top-nav-left{
+  
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+  }
+
+  #top-nav-left:hover{
+    background-color: #f1f1f1;
+  }
+  #top-nav-icon-issb {
+    margin-top: 2px;
+    height: 40px;
+    width: auto;
+  }
 /* top AREA DESIGN CSS */
 .slideimg {
 height: 235px;
@@ -487,7 +500,7 @@ flex-direction: column;
 
 }
 .accordion-content a{
-  border: 1px solid #e6e6e6;
+  border: 1px dashed #e6e6e6;
   border-radius: 5px;
   width: 100%;
   padding: 7px 15px;
@@ -497,6 +510,10 @@ flex-direction: column;
   color: #5b5b5b;
 
   
+}
+.accordion-content a:hover{
+  background:#f1f1f1;
+  cursor: pointer;
 }
 
 .accordion-content a:last-child{
@@ -628,6 +645,7 @@ font-family: 'SolaimanLipi', Arial, sans-serif !important;
 }
 .lecture:hover{
   background:#f1f1f1;
+  cursor: pointer;
 
 }
 .lecture i{
@@ -645,13 +663,14 @@ margin-right: 10px;
  font-size: 20px;
  border-radius: 70%;
   background:white;
- border: 2px solid black;
- box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- background-color: rgb(255, 255, 255);
+ border: 1px solid rgb(255, 255, 255);
+ background-color: rgba(255, 255, 255,0.8);
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ cursor: pointer;
 }
 
 #menuicon:hover {
-color:#291666
+color:#312070;
  }
 
 #floatingMenu{
@@ -702,3 +721,44 @@ color:#291666
 #floatingMenu.fade {
   opacity:0;
 }
+
+
+#militarian{
+  color: black!important; 
+}
+
+
+
+
+
+
+
+
+/*------------- practiceppdt page css--------------------- */
+
+.ppdt_items{
+  border: 1px solid #e8e8e8;
+   border-radius: 5px;
+  
+   margin: 20px 10px 20px 10px;
+   padding-bottom: 20px;
+ }
+ .ppdtimg {
+   width: 100%;
+   border-radius: 5px;
+  
+ }
+ 
+ .ppdtcontrols{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20px;
+ }
+ 
+ .ppdtcontrols div{
+   border: 1px solid #e8e8e8;
+   padding: 5px 20px 5px 20px;
+   border-radius: 5px;
+  
+ }
