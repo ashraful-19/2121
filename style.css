@@ -313,7 +313,7 @@ div.explasec div:nth-child(2) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   padding: 15px 15px 10px 15px;
   position: fixed;
   top: 0px;
@@ -337,11 +337,42 @@ div.explasec div:nth-child(2) {
     height: 40px;
     width: auto;
   }
+
+
+  #menulist{
+    
+   
+    width: 100%;
+    margin-top: 60px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 45;
+    font-size: 14px;
+    border-top: 1px solid rgb(212, 212, 212);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    
+   }
+
+   #menulist a{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 8px 30px 8px 30px;
+   }
+   #menulist a:hover{
+    background-color: #e4e4e4;
+   }
+
 /* top AREA DESIGN CSS */
 .slideimg {
 height: 235px;
 width: 100%;
 object-fit: cover;
+filter: blur(1.5px);
+border-radius: 5px;
 }
 
 
@@ -543,8 +574,13 @@ nav.bottom-nav{
   justify-content: space-between;
   position: fixed;
   bottom: 0px;
+  border-top: 1px solid rgb(227, 227, 227);
   background: rgb(255 255 255);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-top-left-radius : 12px;
+border-top-right-radius : 12px;
+
+
 }
 
 .nav-item{
@@ -635,7 +671,7 @@ background: linear-gradient(
 display:flex;
 justify-content: flex-start;
 align-items: center;
-padding: 10px 15px 10px 15px;
+padding: 15px 15px 15px 15px;
 margin-bottom: 5px;
 border-radius: 0px;
 font-size: 14px;
@@ -672,6 +708,7 @@ margin-right: 10px;
 #menuicon:hover {
 color:#312070;
  }
+
 
 #floatingMenu{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -759,7 +796,8 @@ color:#312070;
  .ppdtcontrols div{
    border: 1px solid #e8e8e8;
    padding: 5px 20px 5px 20px;
-   border-radius: 5px;
+   border-radius: 15px;
+  font-size:13px;
   
  }
 
@@ -768,3 +806,170 @@ color:#312070;
   
   font-size: 13px;
  }
+
+
+
+
+ /* ----------------------Content page Css------------------------ */
+
+ .qcontainer {
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  font-size: 14px;
+  margin: 15px 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  font-family: 'SolaimanLipi', Arial, sans-serif !important;
+  text-align: justify;
+}
+
+.explain {
+  padding: 7px;
+  background-color: rgb(197, 255, 223);
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+
+
+
+/* -----------profile page --------------- */
+
+.profile_img{
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 162, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-div{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+margin-bottom: 30px;
+}
+
+#profile-form{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px 10px 15px;
+}
+
+#profile-form > label{
+
+  font-size: 15px;
+margin-bottom: 5px;
+}
+
+#profile-form > input{
+
+outline: none;
+padding: 10px 15px;
+border: 1px solid rgb(224, 224, 224);
+margin: 0px auto;
+width: 100%;
+border-radius: 5px;
+font-size: 15px;
+margin-bottom: 15px;
+color: #7b7b7b; 
+}
+#profile-form > select{
+  outline: none;
+  padding: 10px 15px;
+border: 1px solid rgb(224, 224, 224);
+margin: 0px auto;
+width: 100%;
+border-radius: 5px;
+font-size: 15px;
+margin-bottom: 15px;
+color:  #7b7b7b;
+}
+#profile-form > option{
+width: 100%;
+border-radius: 5px;
+font-size: 15px;
+
+}
+
+
+
+
+/* --------doubts Page------------- */
+
+.doubts-item{
+  
+  padding: 10px 15px;
+  
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 8px;
+  margin:10px 10px;
+}
+
+.doubts-details{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+
+.doubts-types{
+background-color: #d4b4ff69;
+ color: #834687;
+padding: 2px 15px;
+border-radius: 15px;
+ 
+}
+.solved{
+  background-color: #4dff6245;
+  padding: 2px 15px;
+border-radius: 15px;
+ color:#1B5E20;
+}
+
+
+/* ----------Results page--------- */
+
+
+.result-div{
+  overflow-x: scroll;
+  width:100%;
+  
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width:600px;
+  margin: 10px;
+
+  
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  font-size:13px;
+}
+
+table th {
+  font-size:13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
