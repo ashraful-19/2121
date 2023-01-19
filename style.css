@@ -9,7 +9,7 @@ html,
 body {
   font-family: sans-serif;
   background: #ffffff;
-  height: 100%;
+  height: auto;
   font-family: "SolaimanLipi", Arial, sans-serif; !important
 }
 
@@ -349,7 +349,8 @@ div.explasec div:nth-child(2) {
     top: 0px;
     background-color: white;
     z-index: 45;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: "Hind Siliguri";
     border-top: 1px solid rgb(212, 212, 212);
     display: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -368,33 +369,52 @@ div.explasec div:nth-child(2) {
 
 /* top AREA DESIGN CSS */
 .slideimg {
-height: 235px;
+height: 200px;
 width: 100%;
 object-fit: cover;
-filter: blur(1.5px);
+filter: blur(1.5px) brightness(0.7);
 border-radius: 5px;
+}
+
+.top-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .banner {
 height: auto;
-width: 95%;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+width: 92%;
 margin: 99px auto 0px;
 border-radius: 10px;
-
 display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+flex-direction: column;
 justify-content: space-between;
-align-items: center;
-
 margin-bottom: 33px;
+
 }
 .banner div{
   padding:30px 10px 10px 10px;
 }
 
+.mainslider{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 92%;
+}
+.mainslider > img,.mainslider > svg{
+
+  position: absolute;
+  
+}
+#str{
+  font-family: "Hind Siliguri";
+  
+}
 
 
 /* headTile section */
@@ -504,6 +524,7 @@ padding: 18px 15px;
 font-size: 14px;
 color: #444;
 cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 transition: background-color 0.2s linear;
 display: flex;
 justify-content: flex-start;
@@ -817,7 +838,7 @@ color:#312070;
   padding: 15px 15px 15px 15px;
   font-size: 14px;
   margin: 15px 10px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   font-family: 'SolaimanLipi', Arial, sans-serif !important;
   text-align: justify;
 }
@@ -972,4 +993,99 @@ table th {
   font-size:13px;
   letter-spacing: .1em;
   text-transform: uppercase;
+}
+
+
+/*---------------- Iq list page css------------- */
+
+.list-item >span{
+  padding-right: 10px;
+
+}
+.list-count{
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-size: 15px;
+background-color: #d4b4ff69;
+ color: #a03ba7;
+  font-size: 20px!important;
+ 
+}
+
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  margin: 10px;
+  padding: 15px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: "Hind Siliguri";
+}
+
+
+
+/*-----login page css--------  */
+.login-container{
+  height: 100%;
+}
+.loginbody{
+width: 90%;
+margin: 200px auto 0px auto;
+
+
+
+}
+.login{
+  margin: 15px 5px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+
+}
+.login > p{
+  margin-left: 20px;
+}
+
+
+
+.login-phone{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  display: none;
+  
+}
+.phone-info{
+  width: 100%;
+}
+
+.login-phone > input{
+  width: 90%;
+  margin: 5px auto;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+
+}
+.login-phone > input:first-child{
+  border: 1px solid rgb(197, 197, 197);
+  height: 40px;
+  font-size: 15px;
+
+}
+.login-phone > input:last-child{
+  background-color: rgb(224, 255, 224);
+  color: green;
+
 }
