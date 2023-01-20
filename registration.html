@@ -71,26 +71,38 @@
       <a href="policy.html">Policy</a>
     </div>
 
-    <section class="login-container">
-      <div class="loginbody">
-        <div class="login">
-          <span><i class="fa-solid fa-phone"></i></span>
-          <div class="phone-info">
-            <p style="margin-left: 20px">Login with Phone</p>
-            <form class="login-phone" action="registration.html">
-              <input type="text" placeholder="01XXXXXXXXX" />
-              <input type="submit" value="Send OTP" />
-            </form>
-          </div>
-        </div>
-        <div class="login">
-          <span><i class="fa-brands fa-google"></i></span>
-          <p>Login with Gmail</p>
-        </div>
-        <div class="login">
-          <span><i class="fa-brands fa-facebook"></i></span>
-          <p>Login with Facebook</p>
-        </div>
+    <section class="registration-container">
+      <div class="reg-items">
+        <h1>Registration</h1>
+        <p>
+          আপনার এই নাম্বারে কোন একাউন্ট খোলা হয়নি। আপনি তথ্য গুলো পূরণ করে
+          একাউন্ট খুলে নিতে পারেন
+        </p>
+        <hr />
+        <br />
+        <form action="login.html" id="reg-form">
+          <label for="username">Candidate Name</label>
+          <input type="text" id="username" placeholder="Enter your name" />
+          <label for="college">College/University</label>
+          <input
+            type="text"
+            id="college"
+            placeholder="Enter your college/university"
+          />
+          <label for="coursename">Course</label>
+          <input
+            type="text"
+            id="coursename"
+            placeholder="Enter your course name"
+          />
+          <label for="phonenumber">Phone Number</label>
+          <input
+            type="text"
+            id="phonenumber"
+            placeholder="Enter your phone number"
+          />
+          <input type="submit" id="submit" value="Registration" />
+        </form>
       </div>
     </section>
   </body>
@@ -108,10 +120,6 @@
   function slideToggle() {
     $("#menulist").fadeToggle(100);
   }
-
-  $(".phone-info").click(function () {
-    $(".login-phone").slideDown();
-  });
 
   //   $("body:not(")
   //     .not(".tabcontent")

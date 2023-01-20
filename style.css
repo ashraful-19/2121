@@ -313,9 +313,9 @@ div.explasec div:nth-child(2) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  padding: 15px 15px 10px 15px;
+  box-shadow: rgb(33 35 38 / 10%) 0px 10px 10px -10px;
   position: fixed;
+  padding: 25px;
   top: 0px;
   width: 100%;
   height: 60px;
@@ -323,15 +323,7 @@ div.explasec div:nth-child(2) {
   z-index: 34;
 }
 
-#top-nav-left{
-  
-  padding: 10px 15px 10px 15px;
-  border-radius: 50%;
-  }
 
-  #top-nav-left:hover{
-    background-color: #f1f1f1;
-  }
   #top-nav-icon-issb {
     margin-top: 2px;
     height: 40px;
@@ -713,11 +705,14 @@ margin-right: 10px;
 
 
 #menuicon {
- padding: 4px 8px;
+ padding: 7px 9px;
  position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
  bottom: 80px;
  right: 20px;
- font-size: 20px;
+ font-size: 25px;
  border-radius: 70%;
   background:white;
  border: 1px solid rgb(255, 255, 255);
@@ -1085,7 +1080,49 @@ margin: 200px auto 0px auto;
 
 }
 .login-phone > input:last-child{
-  background-color: rgb(224, 255, 224);
-  color: green;
+  background-color: rgb(12, 13, 12);
+  color: rgb(255, 255, 255);
 
+}
+
+
+
+
+/* ---------registration page css-------------- */
+.registration-container{
+  width: 90%;
+  margin: 100px auto 0px auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  padding: 20px;
+}
+
+
+#reg-form{
+ 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#reg-form > input{
+  height: 35px;
+  padding: 20px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(158, 158, 158);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#reg-form > input:last-child{
+ background-color: rgb(30, 32, 30);
+ color: white;
+ height: 40px;
+ padding: 0px;
+ border-radius: 5px;
+ outline: none;
+ border: 1px solid rgb(158, 158, 158);
+ margin-bottom: 0px;
+ margin-top: 0px;
 }

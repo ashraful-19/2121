@@ -64,7 +64,7 @@
     <div id="menulist">
       <a href="index.html">Home</a>
       <a href="login.html">Login</a>
-      <a href="registration.html">Signup</a>
+      <a href="signup.html">Signup</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="termandcondition.html">Terms & conditions</a>
@@ -75,21 +75,20 @@
       <div class="loginbody">
         <div class="login">
           <span><i class="fa-solid fa-phone"></i></span>
-          <div class="phone-info">
-            <p style="margin-left: 20px">Login with Phone</p>
-            <form class="login-phone" action="registration.html">
-              <input type="text" placeholder="01XXXXXXXXX" />
-              <input type="submit" value="Send OTP" />
+          <div class="phone-info" style="display: block">
+            <h4 style="margin-left: 20px">মোবাইল নাম্বার কনফার্ম করুন</h4>
+            &nbsp;
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01772512057 ফোনে পাঠানো 4 সংখ্যার
+              কোডটি লিখুন
+            </p>
+            <form class="login-phone" action="/loginotp" style="display: block">
+              <input type="text" placeholder="Enter OTP Number" />
+              <input type="submit" value="সাবমিট করুন" />
             </form>
+            <br />
+            <p>আবার কোড পাঠান ১ মিনিট পরে</p>
           </div>
-        </div>
-        <div class="login">
-          <span><i class="fa-brands fa-google"></i></span>
-          <p>Login with Gmail</p>
-        </div>
-        <div class="login">
-          <span><i class="fa-brands fa-facebook"></i></span>
-          <p>Login with Facebook</p>
         </div>
       </div>
     </section>
@@ -108,10 +107,6 @@
   function slideToggle() {
     $("#menulist").fadeToggle(100);
   }
-
-  $(".phone-info").click(function () {
-    $(".login-phone").slideDown();
-  });
 
   //   $("body:not(")
   //     .not(".tabcontent")
