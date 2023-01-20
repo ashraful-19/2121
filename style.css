@@ -999,13 +999,19 @@ table th {
 }
 .list-count{
   padding: 3px 8px;
-  border-radius: 10px;
-  margin-right: 15px;
-  font-size: 15px;
-background-color: #d4b4ff69;
- color: #a03ba7;
-  font-size: 20px!important;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-size: 15px;
+    background-color: #393737f7;
+    color: #ffffff;
+    font-size: 20px!important;
  
+}
+.startbutton {
+  background-color: #393737f7;
+  color: #ffffff;
+  padding: 1px 12px;
+  border-radius: 5px;
 }
 
 .list-item{
@@ -1125,4 +1131,51 @@ margin: 200px auto 0px auto;
  border: 1px solid rgb(158, 158, 158);
  margin-bottom: 0px;
  margin-top: 0px;
+}
+
+
+
+/* ------iqlist page modal css-------- */
+
+.modal {
+  background-color: #ffffff;
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  margin: 0px auto;
+  padding: 27px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 133330;
+  box-shadow: 0 0 0 99999px rgb(0 0 0 / 70%);
+}
+
+.instruction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.practice-exam{
+  width: 90%;
+  margin: 10px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+
+}
+
+.practice-exam span{
+  padding: 7px 0px;
+  text-align: center;
+  width: 45%;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
 }

@@ -47,57 +47,57 @@
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types ripple">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types ripple">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types ripple">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types ripple">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 			<div class="list-item">
 				
 				<p><span class="list-count"><i class="fa-solid fa-brain"></i></span> Verbal Exam 01</p>
-				<span class="doubts-types">Start</span>
+				<span class="startbutton ripple show-modal" >Start</span>
 			</div>
 
 		</div>
@@ -130,8 +130,45 @@
 		</a>
 	  </nav>
 </section>
+<div class="modal-section">
+	<div class="modal">
+		<div class="instruction">
+	 <h3>Verbal IQ Test 01</h3>
+	 <p>Total Questions-80 || Marks-80</p>
+	 <p>Duration-38min</p>
+	</div>
+	<hr><br>
+	<div class="instruction-bangla">
+	 <h4>পরীক্ষার্থীদের জন্য নির্দেশনাবলি</h4>
+	<p>১। প্রতিটি সঠিক উত্তরের মান ১</p>
+	<p>২। নির্ধারিত সময় ৩৮ মিনিট</p>
+</div>
+<div class="practice-exam">
+	<span>Practice</span>
+	<span>Exam</span>
+</div>	
+</div>
+
+
   </body>
+  <br><br><br>
   <script src="./script.js"></script>
   <!-- Jquery Cnd minified -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-</html>
+<script>
+var modal = $('.modal');
+$('.show-modal').click(function() {
+ modal.fadeIn();
+});
+
+
+$(document).ready(function() {
+  $(document).mousedown(function(event) {
+    // Check if the target of the click event is not the navigation element itself
+    if (!$(event.target).closest(".modal").length) {
+      $(".modal").fadeOut();
+    }
+  });
+});
+
+</script>
