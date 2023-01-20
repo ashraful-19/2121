@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISSB SCHOOL BANGLADESH</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      href="https://fonts.maateen.me/solaiman-lipi/font.css"
+      rel="stylesheet"
+    />
+
+    <!-- 9420 eii logota ekhn theke change korte hbe kaorn issb er logo  -->
+    <link
+      rel="shortcut icon"
+      href="https://issb-bd.org/imgs/logonew.png"
+      type="image/x-icon"
+    />
+    <!-- fontawesome link kora hoies kintu janina minified kina -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css"
+    />
+
+	
+  </head>
+
+  <body><svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(29.527, 27.211, 32.245, 1)" offset="0%"></stop><stop stop-color="rgba(56.427, 55.785, 57.29, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,21L80,45.5C160,70,320,119,480,122.5C640,126,800,84,960,56C1120,28,1280,14,1440,38.5C1600,63,1760,126,1920,136.5C2080,147,2240,105,2400,77C2560,49,2720,35,2880,56C3040,77,3200,133,3360,136.5C3520,140,3680,91,3840,70C4000,49,4160,56,4320,52.5C4480,49,4640,35,4800,56C4960,77,5120,133,5280,140C5440,147,5600,105,5760,98C5920,91,6080,119,6240,122.5C6400,126,6560,105,6720,80.5C6880,56,7040,28,7200,35C7360,42,7520,84,7680,87.5C7840,91,8000,56,8160,66.5C8320,77,8480,133,8640,157.5C8800,182,8960,175,9120,164.5C9280,154,9440,140,9600,112C9760,84,9920,42,10080,49C10240,56,10400,112,10560,133C10720,154,10880,140,11040,122.5C11200,105,11360,84,11440,73.5L11520,63L11520,210L11440,210C11360,210,11200,210,11040,210C10880,210,10720,210,10560,210C10400,210,10240,210,10080,210C9920,210,9760,210,9600,210C9440,210,9280,210,9120,210C8960,210,8800,210,8640,210C8480,210,8320,210,8160,210C8000,210,7840,210,7680,210C7520,210,7360,210,7200,210C7040,210,6880,210,6720,210C6560,210,6400,210,6240,210C6080,210,5920,210,5760,210C5600,210,5440,210,5280,210C5120,210,4960,210,4800,210C4640,210,4480,210,4320,210C4160,210,4000,210,3840,210C3680,210,3520,210,3360,210C3200,210,3040,210,2880,210C2720,210,2560,210,2400,210C2240,210,2080,210,1920,210C1760,210,1600,210,1440,210C1280,210,1120,210,960,210C800,210,640,210,480,210C320,210,160,210,80,210L0,210Z"></path></svg>
+	
+    <div class="instruction">
+		<h3>Verbal IQ Test 01</h3>
+		<p>Total Questions-80 || Marks-80</p>
+		<p>Duration-38min</p>
+	</div>	
+	<section class="questions-box">
+			
+			  <form action="/resultiq" method="post" id="form-id">
+				  <!-- <input
+					type="text"
+					id="countdown1"
+					hidden
+					name="countdown"
+					value=""
+				  /> -->
+				  <div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				<div class="qcontainer" id="IQ<%= i+1 %>">
+					<p>
+					  <span><b>01)&nbsp;</b></span>
+	  
+					  <b>hello this is my question box only question will be there??????</b>
+					</p>
+
+					<img id="iqpic" src="/images/<%= question.imageIq %>" alt=""/>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option1"
+					  name="<%= question._id %>"
+					  value="a"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+	  
+					<label for="option1">first option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option2"
+					  name="<%= question._id %>"
+					  value="b"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option2">second option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option3"
+					  name="<%= question._id %>"
+					  value="IQ<%= i+1 %>"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option3">3rd option</label>
+					<br />
+	  
+					<input
+					  type="radio"
+					  id="option4"
+					  name="<%= question._id %>"
+					  value="d"
+					  class="IQ<%= i+1 %>"
+					  onclick='colorChange("IQ<%= i+1 %>")'
+					/>
+					<label for="option4">fourth option</label>
+					<input
+					  hidden
+					  checked
+					  type="radio"
+					  name="<%= question._id %>"
+					  value="0"
+					  class="IQ<%= i+1 %>"
+					/>
+	  
+					<br />
+					<br />
+					<div class="explainer">
+					<div
+					  class="explain slide<%= i+1 %>"
+					  onclick='slideToggle("slideToggle<%= i+1 %>")'
+					>
+					  <p>Explanation</p>
+					</div>
+	  
+					<div class="love">
+						<i class="fa-regular fa-heart"></i>
+					</div>
+	  
+				</div>
+					<p class="slideToggle<%= i+1 %> hideExplain">
+					  here will go all my explanations , and finally we will implement it
+					</p>
+				</div>
+				
+	  
+				
+				<div class="qcontainer">
+					<div>
+					  <p><b>Questions Navigation</b></p>
+					</div>
+		  
+					<div class="easynav">				  
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+						<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				</div>
+				  <br />
+			  </form>
+	</section>
+
+	<div id="floatingMenu">
+		<div class="">
+			<div>
+			<p><b>Questions Navigation</b></p>
+			</div>
+
+			<div class="easynav-float">
+			
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>	<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+				<p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p><p id="" class="">10</p>
+			</div>
+		</div>
+	</div>
+
+    <div id="menuicon">
+        <i class="fa-solid fa-list-ol"></i>
+    </div>
+
+
+<!-- stopwatch seciton -->
+	<div class="timer">
+		<span id="countdown">30min</span>
+		<i class="fa-solid fa-stopwatch"></i>
+	  </div>
+	  
+
+
+
+ <!-- bottom nagivatoin section  -->
+
+ <section class="Bottom-Navigatoin">
+	<nav class="bottom-nav">
+		<a class="nav-item ripple" href="index.html">
+		  <i class="fa-solid fa-house-chimney"></i>
+		  <span>Home</span>
+		</a>
+  
+		<a class="nav-item ripple" href="doubts.html">
+		  <i class="fa-regular fa-circle-question"></i>
+		  <span>Doubts</span>
+		</a>
+  
+		<a class="nav-item ripple" href="results.html"
+		  ><i class="fa-solid fa-list-check"></i></i>
+		  <span>Results</span>
+		</a>
+  
+		<a class="nav-item ripple" href="profile.html">
+		  <i class="fa-regular fa-user"></i>
+		  <span>Profile</span>
+		</a>
+	  </nav>
+</section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  $("#menuicon").click(function(){
+		$("#floatingMenu").fadeToggle(100);
+		
+	  });
+	 
+	});</script>
+	
+  <script src="./script.js"></script>
+ 
+</html>
+<script>
+	let startingTime = 3;
+	let time = startingTime * 60; //minutes * 60 seconds
+	let refreshIntervalId = setInterval(updateCountdown, 1000); //update every 1 second
+  
+	function updateCountdown() {
+	  const minutes = Math.floor(time / 60); // rounds a number DOWN to the nearest integer
+	  let seconds = time % 60;
+  
+	  seconds = seconds < 10 ? "0" + seconds : seconds;
+	  const contdownEl = document.getElementById("countdown");
+	  if (minutes >= 1) {
+		contdownEl.innerHTML = `${minutes} min : ${seconds} sec`;
+		document.getElementById("countdown1").value = time;
+	  } else {
+		contdownEl.innerHTML = `${seconds} sec`;
+		document.getElementById("countdown1").value = time;
+	  }
+	  time--;
+  
+	  if (time < 0) {
+		//stop the setInterval whe time = 0 for avoid negative time
+		clearInterval(refreshIntervalId);
+		document.getElementById("countdown1").value = time + 1;
+		document.getElementById("form-id").submit();
+	  }
+	}
+  </script>

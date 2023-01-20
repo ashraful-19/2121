@@ -712,18 +712,18 @@ justify-content: center;
 align-items: center;
  bottom: 80px;
  right: 20px;
- font-size: 25px;
+ font-size: 20px;
  border-radius: 70%;
   background:white;
  border: 1px solid rgb(255, 255, 255);
- background-color: rgba(255, 255, 255,0.8);
+ background-color: rgb(255, 255, 255);
  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  cursor: pointer;
 }
-
-#menuicon:hover {
-color:#312070;
- }
+#menuicon:active {
+  background:#000000c4;
+   color:white;
+   }
 
 
 #floatingMenu{
@@ -731,11 +731,11 @@ color:#312070;
   position: fixed;
   bottom: 130px;
   right: 20px;
-  
+  padding: 15px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
+  max-width: 300px;
   min-width: 250px;
   background: white;
   font-size: 13px;
@@ -1010,7 +1010,7 @@ table th {
 .startbutton {
   background-color: #393737f7;
   color: #ffffff;
-  padding: 1px 12px;
+  padding: 5px 15px;
   border-radius: 5px;
 }
 
@@ -1178,4 +1178,101 @@ margin: 200px auto 0px auto;
   border-radius: 5px;
   border: 1px solid rgb(0, 0, 0);
   color: white;
+}
+
+
+
+/* ------iq exam page css---------- */
+
+
+
+
+.questions-box {
+  width: 98%;
+  word-wrap: break-word;
+  border-radius: 4px;
+  padding-bottom: 80px;
+  margin: 0px auto;
+}
+
+
+.qcontainer {
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  font-size: 14px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: 'SolaimanLipi', Arial, sans-serif !important;
+}
+
+.explain {
+  padding: 4px 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 12px;
+}
+.love{
+  color: black;
+  margin-right: 0px;
+  font-size: 15px;
+}
+.explainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.hideExplain{
+  /* display: none; */
+}
+
+.easynav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-items: center;
+ 
+}
+
+
+.easynav p {
+  border-radius: 3px;
+  background-color: rgb(238, 223, 226);
+  margin: 1px;
+  padding: 3px 5px 3px 5px;
+  font-size: 12px;
+}
+
+.easynav-float{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.easynav-float p {
+  border-radius: 3px;
+  background-color: rgb(238, 223, 226);
+  margin: 1px;
+  padding: 3px 5px 3px 5px;
+  font-size: 12px;
+}
+
+.timer {
+  position: fixed;
+  bottom: 88px;
+  left:22px;
+  background: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
