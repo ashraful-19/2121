@@ -170,7 +170,7 @@
 <script>
 var modal = $('.modal');
 $('.show-modal').click(function() {
- modal.fadeIn();
+ modal.fadeIn(100);
 });
 
 
@@ -178,7 +178,7 @@ $(document).ready(function() {
   $(document).mousedown(function(event) {
     // Check if the target of the click event is not the navigation element itself
     if (!$(event.target).closest(".modal").length) {
-      $(".modal").fadeOut();
+      $(".modal").fadeOut(100);
     }
   });
 });
